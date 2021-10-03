@@ -45,7 +45,7 @@ const app = {
         {
             name: 'Dù Cho Mai Về Sau',
             singer: 'buitruonglinh x Freak D',
-            path: '.assets/music/Dù Cho Mai Về Sau (Lofi Ver.) - buitruonglinh x Freak D (128 kbps).mp3',
+            path: './assets/music/Dù Cho Mai Về Sau.mp3',
             image: './assets/img/du_cho_mai_ve_sau.jpg'
         },
         {
@@ -77,6 +77,12 @@ const app = {
             singer: 'Tân Trần x Freak D',
             path: './assets/music/Bỏ Em Vào Balo.mp3',
             image: './assets/img/bo_em_vao_balo.jpg'
+        },
+        {
+            name: 'Sài Gòn Đau Lòng Quá',
+            singer: 'Hứa Kim Tuyền x Hoàng Duyên',
+            path: './assets/music/SÀI GÒN ĐAU LÒNG QUÁ - HỨA KIM TUYỀN x HOÀNG DUYÊN (OFFICIAL MV) (128 kbps).mp3',
+            image: './assets/img/sai_gon_dau_long_qua.jpg'
         },
         {
             name: 'Yêu Nhiều Ghen Nhiều',
