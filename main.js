@@ -1,15 +1,3 @@
-/**
- * 1. Render songs
- * 2. Scroll top
- * 3. Play/pause/ seek
- * 4. CD rotate
- * 5. next/ prev
- * 6. Random
- * 7. next/ repeat when end of song
- * 8. acitve song
- * 9. scroll sctive song into view
- * 10. play song when click
- */
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
@@ -43,6 +31,12 @@ const app = {
             image: './assets/img/cuoi_di.jpg'
         },
         {
+            name: 'Muộn màng là từ lúc',
+            singer: 'Reddy x Whisky',
+            path: './assets/music/Muộn Màng Là Từ Lúc (Lofi Ver.) - Reddy x Whisky (128 kbps).mp3',
+            image: './assets/img/muon mang la tu luc.jpg'
+        },
+        {
             name: 'Dù Cho Mai Về Sau',
             singer: 'buitruonglinh x Freak D',
             path: './assets/music/Dù Cho Mai Về Sau.mp3',
@@ -61,10 +55,16 @@ const app = {
             image: './assets/img/ho_yeu_ai_mat_roi.jpg'
         },
         {
-            name: 'Yêu Từ Đâu Mà Ra',
-            singer: 'Lil ZPOET',
-            path: './assets/music/Yêu Từ Đâu Mà Ra.mp3',
-            image: './assets/img/yeu_tu_dau_ma_ra.jpg'
+            name: 'Cô ấy nói',
+            singer: 'Ngô Anh Đạt x Freak D',
+            path: './assets/music/Cô Ấy Nói (Lofi Ver.).mp3',
+            image: './assets/img/co ay noi.jpg'
+        },
+        {
+            name: 'Có hẹn với thanh xuân',
+            singer: 'MONSTAR',
+            path: './assets/music/có hẹn với thanh xuân - MONSTAR.mp3',
+            image: './assets/img/có hẹn với thanh xuân.jpg'
         },
         {
             name: '3107 3',
@@ -79,6 +79,12 @@ const app = {
             image: './assets/img/bo_em_vao_balo.jpg'
         },
         {
+            name: 'Lời nói điêu trên môi em',
+            singer: 'Đỗ Nguyên Phúc ft. Lil Z Poet',
+            path: './assets/music/Lời Nói Điêu Trên Môi Em (Freak D Lofi Ver.) - Đỗ Nguyên Phúc ft. Lil Z Poet (128 kbps).mp3',
+            image: './assets/img/loi noi dieu tren moi em.jpg'
+        },
+        {
             name: 'Sài Gòn Đau Lòng Quá',
             singer: 'Hứa Kim Tuyền x Hoàng Duyên',
             path: './assets/music/SÀI GÒN ĐAU LÒNG QUÁ - HỨA KIM TUYỀN x HOÀNG DUYÊN (OFFICIAL MV) (128 kbps).mp3',
@@ -91,12 +97,23 @@ const app = {
             image: './assets/img/yeu_nhieu_ghen_nhieu.jpg'
         },
         {
+            name: 'Ôm em lần cuối',
+            singer: 'Nit ft. Sing x Freak D',
+            path: './assets/music/Ôm Em lần Cuối (Lofi Ver.) - Nit ft. Sing x Freak D (128 kbps).mp3',
+            image: './assets/img/om em lan cuoi.jpg'
+        },
+        {
             name: 'Tình Yêu Màu Hồng',
             singer: 'Hồ Văn Quý x Xám x Freak D',
             path: './assets/music/Tình Yêu Màu Hồng (Lofi Ver.) - Hồ Văn Quý x Xám x Freak D (128 kbps).mp3',
             image: './assets/img/tinh_yeu_mau_hong.jpg'
         },
-
+        {
+            name: 'Vài giây nữa thôi',
+            singer: 'Hồ Văn Quý x Xám x Freak D',
+            path: './assets/music/Vài Giây Nữa Thôi - Reddy - MV Lyrics HD (128 kbps).mp3',
+            image: './assets/img/vai giay nua thoi.jpg'
+        },
     ],
     render: function() {
         const htmls = this.songs.map(function(song,index) {
